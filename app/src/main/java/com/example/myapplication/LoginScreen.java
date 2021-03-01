@@ -47,7 +47,7 @@ public class LoginScreen extends AppCompatActivity {
         final SQLSever sqlSever = new SQLSever(this);
         ArrayList<User> list = new ArrayList<>();
         //----------Tài Khoản Gốc-------------------
-        User s = new User("admin", "Giáo Sư Huy", "hqhlucifer666@gmail.com", "admin", "CEO", 3);
+        User s = new User("admin", "Lamahph07595", "lamah.dev@gmail.com", "admin", "CEO", 3);
         sqlSever.AddUser(s);
         //---------------------------------------------------------------------------
         password.setInputType(InputType.TYPE_CLASS_TEXT |//ẩn Text để làm mật khẩu
