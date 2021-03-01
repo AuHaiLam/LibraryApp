@@ -85,7 +85,6 @@
                 android:layout_height="match_parent"
                 android:gravity="center_vertical" />
         </LinearLayout>
-
         <ImageView
             android:id="@+id/ivDelete1"
             android:layout_width="48dp"
