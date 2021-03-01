@@ -50,32 +50,32 @@ public class User_activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        lvNguoiDung.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                return false;
-            }
-        });
+//        lvNguoiDung.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+//            @Override
+//            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+//                return false;
+//            }
+//        });
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        dsNguoiDung.clear();
-        dsNguoiDung = nguoiDungDAO.getAllNguoiDung();
-        adapter.changeDataset(nguoiDungDAO.getAllNguoiDung());
-    }
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        dsNguoiDung.clear();
+//        dsNguoiDung = nguoiDungDAO.getAllNguoiDung();
+//        adapter.changeDataset(nguoiDungDAO.getAllNguoiDung());
+//    }
 
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_user, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    public void add(MenuItem item) {
-        Intent intent = new Intent(User_activity.this, AddUserActivity.class);
-        startActivity(intent);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        getMenuInflater().inflate(R.menu.menu_user, menu);
+//        return super.onCreateOptionsMenu(menu);
+//    }
+//
+//    public void add(MenuItem item) {
+//        Intent intent = new Intent(User_activity.this, AddUserActivity.class);
+//        startActivity(intent);
+//    }
 }

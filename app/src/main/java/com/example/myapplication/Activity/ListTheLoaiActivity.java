@@ -40,7 +40,7 @@ public class ListTheLoaiActivity extends AppCompatActivity {
         lvTheLoai.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(ListTheLoaiActivity.this, TheLoaiDetailActivity.class);
+                Intent intent = new Intent(ListTheLoaiActivity.this, ListTheLoaiActivity.class);
                 Bundle b = new Bundle();
                 b.putString("MATHELOAI", dsTheLoai.get(position).getMaTheloai());
                 b.putString("TENTHELOAI", dsTheLoai.get(position).getTenTheloai());

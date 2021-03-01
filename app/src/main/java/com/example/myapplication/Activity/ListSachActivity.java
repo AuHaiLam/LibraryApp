@@ -41,7 +41,7 @@ public class ListSachActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Sach sach = (Sach) parent.getItemAtPosition(position);
-                Intent intent = new Intent(ListSachActivity.this, SachDetailActivity.class);
+                Intent intent = new Intent(ListSachActivity.this, ListSachActivity.class);
                 Bundle b = new Bundle();
                 b.putString("MASACH", sach.getMaSach());
                 b.putString("MATHELOAI", sach.getMaTheLoai());
