@@ -41,6 +41,7 @@ public class ListHoaDonActivity extends AppCompatActivity {
         } catch (Exception e) {
             Log.d("Error: ", e.toString());
         }
+
         adapter = new HoaDonAdapter(this, dsHoaDon);
         lvHoaDon.setAdapter(adapter);
         lvHoaDon.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -48,6 +49,8 @@ public class ListHoaDonActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 HoaDon hoaDon = (HoaDon) parent.getItemAtPosition(position);
                 Intent intent = new Intent(ListHoaDonActivity.this, HoaDonChiTietActivity.class);
+
+
                 Bundle b = new Bundle();
                 b.putString("MAHOADON", hoaDon.getMaHoaDon());
                 intent.putExtras(b);

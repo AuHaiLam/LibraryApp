@@ -34,6 +34,8 @@ public class User_activity extends AppCompatActivity {
 
         lvNguoiDung = findViewById(R.id.lvUser);
 
+
+
         nguoiDungDAO = new NguoiDungDAO(User_activity.this);
         dsNguoiDung = nguoiDungDAO.getAllNguoiDung();
         adapter = new NguoiDungAdapter(this, dsNguoiDung);
